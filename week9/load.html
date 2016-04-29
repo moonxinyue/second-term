@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>登陆页面</title>
+	<link rel="stylesheet" type="text/css" href="load.css">
+</head>
+<body>
+	<div class="main">
+		<div class="center">
+			<div class="icon">
+				<i class="iconfont becenter">&#xe62e;</i>
+			</div>
+			<p>Dashboard Login</p>
+			<form name="myemail">
+			<input class="intermail" name="mail" type="text" placeholder="请输入您的邮箱"></input>
+			<input class="interpasswd" name="passwd" type="password" placeholder="请输入您的密码"></input>
+			<input class="handin" id="sure" type="button" value="Login"></input>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+function test() {
+    var email=myemail.mail.value;
+    var passwds=myemail.passwd.value;
+    var str1=/\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/;
+    var str2=/(?!^\\d+$)(?!^[a-zA-Z]+$)(?!^_#+$).{6,12}/;
+    if ( str1.test(email)==true&& str2.test(passwds)==true) {
+        alert("注册成功");  
+    }
+    else if (str1.test(email)==false&&str2.test(passwds)==true){
+        alert("邮箱格式错误，请重新输入");
+        return false;
+    }
+    else if (str1.test(email)==true&&str2.test(passwds)==false){
+        alert("密码格式错误，请重新输入");
+    } 
+}
+document.querySelector('#sure').addEventListener('click',test,false )
+</script>
+</html>

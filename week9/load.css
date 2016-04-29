@@ -1,0 +1,76 @@
+body,
+div,
+p {
+	padding: 0;
+	margin: 0;
+    font-family: "Microsoft YaHei";
+}
+@font-face {
+	font-family: 'iconfont';
+    src: url(icons/iconfont.eot); /* IE9*/
+    src: url(icons/iconfont.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+         url(icons/iconfont.woff) format('woff'), /* chrome、firefox */
+         url(icons/iconfont.ttf) format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+         url(icons/iconfont.svg#iconfont) format('svg'); /* iOS 4.1- */
+}
+.main {
+	margin: 20px auto;
+	width: 800px;
+	min-width: 800px;
+	height: 600px;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#a6a0b2), to(#c4cdc6));
+}
+.center {
+	margin: 0 auto;
+	width: 252px;
+	height: 600px;
+	overflow: hidden;
+}
+.icon {
+	margin-top: 168px;
+    margin-left: 101px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 50px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale; 
+    color: #979990;
+}
+p {
+	margin: 8px 40px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #ffffff;
+	display: inline-block;
+	overflow: hidden;
+}
+.intermail,
+.interpasswd {
+	float: left;
+	margin-top: 18px;
+	width: 250px;
+	height: 40px;
+	background-color: #8c8c8c;
+	font-size: 18px;
+	line-height: 40px;
+	color: #ffffff;
+	border: 1px solid #8c8c8c;
+	border-radius: 5px;
+}
+.handin {
+	margin-top: 18px;
+	width: 250px;
+	height: 40px;
+	background-color: #ff7539;
+	font-size: 17px;
+	line-height: 40px;
+	color: #ffffff;
+	cursor: pointer;
+	border: 1px solid #ff7539;
+	border-radius: 5px;
+}
